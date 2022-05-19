@@ -30,13 +30,16 @@ header{
 	align-items: center;
 }
 
-.position_row p{
+.link {
+	text-decoration: none;
+	color: #000000;
 	font-weight: 400;
 	font-size: 20px;
 	transition: 0.4s;
+	line-height: 24px;
 }
 
-.position_row p:hover{
+.link:hover{
 	color: #5EBE3C;
 }
 
@@ -100,12 +103,14 @@ h3{
 	font-weight: 700;
 	font-size: 64px;
 	margin: 0;
+	line-height: 72px;
 }
 
 .block_txt p, .about_txt p{
 	font-weight: 400;
-	font-size: 28px;
+	font-size: 24px;
 	margin: 48px 0;
+	line-height: 41px;
 }
 
 #for_help{
@@ -125,6 +130,7 @@ h3{
 	display: flex;
 	flex-direction: column;
 	width: 600px;
+	color: #333333;
 }
 
 .about_txt p{
@@ -140,11 +146,17 @@ h3{
 	text-align: center;
 }
 
+#for_color{
+	color: #333333;
+}
+
 .all_cards{
 	display: flex;
 	flex-direction: row;
 	gap: 16px;
 	margin-top: 80px;
+	color: #333333;
+	justify-content: center;
 }
 
 .card img{
@@ -156,13 +168,15 @@ h3{
 	font-weight: 700;
 	font-size: 36px;
 	margin-top: 40px;
+	line-height: 46px;
 }
 
 .card p{
 	margin: 0;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 22px;
 	margin-top: 16px;
+	line-height: 37px;
 }
 
 #for_read{
@@ -175,6 +189,10 @@ h3{
 	color: #84C03C;
 	font-weight: 700;
 	font-size: 28px;
+}
+
+#read_more:hover{
+	color: #86D23F;
 }
 
 footer{
@@ -196,8 +214,9 @@ footer{
 	width: 600px;
 	margin: 0;
 	font-weight: 400;
-	font-size: 28px;
+	font-size: 24px;
 	margin-top: 24px;
+	line-height: 41px;
 }
 
 .details{
@@ -228,4 +247,58 @@ footer{
 
 .details_card p{
 	margin-top: 10px;
+}
+
+
+
+@media(max-width: 1220px){
+	.container{
+		width: 700px;
+	}
+
+	.space_media{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#bread{
+		width: 100%;
+	}
+
+	.about_txt{
+		text-align: center;
+	}
+
+/*	.for_reverse{
+		display: flex;
+		flex-direction: column-reverse;
+	}*/
+
+	.all_cards{
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.card{
+		gap: 24px;
+	}
+
+	.card img{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+
+	.card h5{
+		margin: 0;
+		margin-top: 24px;
+	}
+
+}
+
+
+@media(max-width: 740px){
+	/*mobile version*/
 }

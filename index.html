@@ -15,8 +15,8 @@
     <div class="container space_between">
         <img src="images/Logo.svg" id="logo">
         <div class="position_row">
-            <p>Про нас</p>
-            <p>Історії Українців</p>
+            <p><a href="#about_us" class="link">Про нас</a></p>
+            <p><a href="#stories" class="link">Історії Українців</a></p>
             <a href="#help" class="green_button sm">Хочу допомогти</a>
         </div>
     </div>
@@ -34,20 +34,25 @@
     </div>
 </section>
 
-<section>
-    <div class="container space_between margin_top">
-        <img src="images/bread.png" id="bread">
-        <div class="position_right about_txt">
-            <h3>Про нас</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-        </div>
+<section id="about_us">
+    <div class="container margin_top">
+    	<div class="space_between space_media">
+    		<img src="images/bread.png" id="bread">
+	        <div class="position_right about_txt">
+	            <div class="for_reverse">
+	            	<h3>Про нас</h3>  <!-- reverse h3? -->
+	            </div>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+	                dolore magna aliqua.</p>
+	        </div>
+    	</div>
+        
     </div>
 </section>
 
-<section>
+<section id="stories">
     <div class="container margin_top">
-        <h3 class="align_center">Історії українців</h3>
+        <h3 class="align_center" id="for_color">Історії українців</h3>
         <div class="all_cards">
             <div class="card">
                 <img src="images/ukrainians.png">
