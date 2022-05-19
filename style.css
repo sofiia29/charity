@@ -33,22 +33,45 @@ header{
 .position_row p{
 	font-weight: 400;
 	font-size: 20px;
+	transition: 0.4s;
 }
 
-.position_row button, .block_txt button{
+.position_row p:hover{
+	color: #5EBE3C;
+}
+
+.green_button{
 	font-family: 'Roboto Flex';
 	font-weight: 700;
-	font-size: 20px;
 	color: #FFFFFF;
 	background-color: #5EBE3C;
 	border-radius: 13px;
-	padding: 12px 20px;
 	box-sizing: border-box;
-	border: none;
+	text-decoration: none;
+	width: max-content;
+	transition: 0.4s;
+}
+
+.green_button:hover{
+	background-color: #86d23f;
+}
+
+.green_button:active{
+	background-color: #90e14b;
+}
+
+.sm{
+	font-size: 20px;
+	padding: 12px 20px;
+	line-height: 24px;
+}
+.md{
+	font-size: 24px;
+	padding: 24px 40px;
+	line-height: 24px;
 }
 
 .block_txt button{
-	padding: 0;
 	padding: 24px 40px;
 	width: 296px;
 	font-size: 28px;
@@ -68,11 +91,8 @@ header{
 .block_txt{
 	display: flex;
 	flex-direction: column;
-	margin: 0;
-	margin-left: 195px;
 	padding-top: 240px;
 	padding-bottom: 301px;
-	width: 1048px;
 	color: #FFFFFF;
 }
 
@@ -85,7 +105,6 @@ h3{
 .block_txt p, .about_txt p{
 	font-weight: 400;
 	font-size: 28px;
-	margin: 0;
 	margin: 48px 0;
 }
 
@@ -208,6 +227,5 @@ footer{
 }
 
 .details_card p{
-	margin-top: 0;
 	margin-top: 10px;
 }
