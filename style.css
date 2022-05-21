@@ -122,6 +122,10 @@ h3{
 	width: 500px;
 }
 
+#bread_media{
+	display: none;
+}
+
 .position_right{
 	text-align: right;
 }
@@ -263,17 +267,18 @@ footer{
 	}
 
 	#bread{
+		display: none;
+	}
+
+	#bread_media{
+		display: block;
 		width: 100%;
+		margin-top: 20px;
 	}
 
 	.about_txt{
 		text-align: center;
 	}
-
-/*	.for_reverse{
-		display: flex;
-		flex-direction: column-reverse;
-	}*/
 
 	.all_cards{
 		flex-direction: column;
@@ -300,5 +305,76 @@ footer{
 
 
 @media(max-width: 740px){
-	/*mobile version*/
+	.container{
+		width: 375px;
+	}
+
+	.position_media{
+		display: none;
+	}
+
+	#logo{
+		margin-left: auto;
+		margin-right: auto;
+		width: 71px;
+		height: 52px;
+	}
+
+	.block_txt{
+		padding: 0;
+		padding-top: 56px;
+		padding-bottom: 75px;
+	}
+
+	.green_button{
+		padding: 12px 20px;
+		font-size: 20px;
+	}
+
+	h3{
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	p{
+		font-size: 20px;
+		line-height: 36px;
+	}
+
+	.about_txt{
+		text-align: left;
+	}
+
+	#for_color{
+		text-align: left;
+	}
+
+	.all_cards{
+		margin: 0;
+		margin-top: 20px;
+	}
+
+	.card:last-child{
+		display: none;
+	}
+
+	#for_read{
+		margin: 0;
+		margin-top: 31px;
+	}
+
+	#read_more{
+		font-size: 20px;
+	}
+
+	footer{
+		padding: 0;
+		padding-top: 70px;
+		padding-bottom: 85px;
+	}
+
+	.details_txt p{
+		width: 100%;
+	}
+
 }
