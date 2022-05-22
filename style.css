@@ -34,7 +34,7 @@ header{
 	text-decoration: none;
 	color: #000000;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 18px;
 	transition: 0.4s;
 	line-height: 24px;
 }
@@ -69,15 +69,9 @@ header{
 	line-height: 24px;
 }
 .md{
-	font-size: 24px;
-	padding: 24px 40px;
+	font-size: 22px;
+	padding: 20px 32px;
 	line-height: 24px;
-}
-
-.block_txt button{
-	padding: 24px 40px;
-	width: 296px;
-	font-size: 28px;
 }
 
 .backgr{
@@ -101,15 +95,15 @@ header{
 
 h3{
 	font-weight: 700;
-	font-size: 64px;
+	font-size: 52px;
 	margin: 0;
 	line-height: 72px;
 }
 
 .block_txt p, .about_txt p{
 	font-weight: 400;
-	font-size: 24px;
-	margin: 48px 0;
+	font-size: 22px;
+	margin: 24px 0 32px 0;
 	line-height: 41px;
 }
 
@@ -164,23 +158,23 @@ h3{
 }
 
 .card img{
-	width: 400px;
+	width: 100%;
 }
 
 .card h5{
 	margin: 0;
 	font-weight: 700;
-	font-size: 36px;
-	margin-top: 40px;
-	line-height: 46px;
+	font-size: 32px;
+	margin-top: 32px;
+	line-height: 40px;
 }
 
 .card p{
 	margin: 0;
 	font-weight: 400;
-	font-size: 22px;
+	font-size: 18px;
 	margin-top: 16px;
-	line-height: 37px;
+	line-height: 34px;
 }
 
 #for_read{
@@ -192,7 +186,7 @@ h3{
 	text-decoration: none;
 	color: #84C03C;
 	font-weight: 700;
-	font-size: 28px;
+	font-size: 22px;
 }
 
 #read_more:hover{
@@ -218,7 +212,7 @@ footer{
 	width: 600px;
 	margin: 0;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 22px;
 	margin-top: 24px;
 	line-height: 41px;
 }
@@ -260,6 +254,43 @@ footer{
 		width: 700px;
 	}
 
+	h3{
+		font-size: 48px;
+		line-height: 56px;
+	}
+
+	.md {
+		font-size: 20px;
+		padding: 16px 32px;
+		line-height: 24px;
+	}
+
+	.card h5{
+		font-size: 30px;
+	}
+
+	.card{
+		margin-bottom: 40px;
+	}
+
+	.card p{
+		margin-top: 8px;
+	}
+
+	#read_more {		
+		font-size: 20px;
+	}
+	
+	#for_read{
+		margin-top: 16px;
+	}
+
+
+	.block_txt p, .about_txt p, .card p, .details_txt p{
+		font-size: 18px;
+		line-height: 30px;
+	}
+
 	.space_media{
 		display: flex;
 		flex-direction: column;
@@ -273,7 +304,7 @@ footer{
 	#bread_media{
 		display: block;
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 32px;
 	}
 
 	.about_txt{
@@ -306,7 +337,10 @@ footer{
 
 @media(max-width: 740px){
 	.container{
-		width: 375px;
+		width: 100%;
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+		box-sizing: border-box;
 	}
 
 	.position_media{
@@ -326,14 +360,19 @@ footer{
 		padding-bottom: 75px;
 	}
 
-	.green_button{
-		padding: 12px 20px;
-		font-size: 20px;
+	h3{
+		font-size: 32px;
+		line-height: 36px;
+
 	}
 
-	h3{
-		font-size: 36px;
-		line-height: 48px;
+	.block_txt p {
+		margin: 16px 0;
+	}
+
+	.md{
+		font-size: 18px;
+		padding: 12px 20px;
 	}
 
 	p{
@@ -343,6 +382,7 @@ footer{
 
 	.about_txt{
 		text-align: left;
+		width: 100%;
 	}
 
 	#for_color{
@@ -351,7 +391,7 @@ footer{
 
 	.all_cards{
 		margin: 0;
-		margin-top: 20px;
+		margin-top: 32px;
 	}
 
 	.card:last-child{
@@ -375,6 +415,10 @@ footer{
 
 	.details_txt p{
 		width: 100%;
+	}
+
+	.card h5{
+		font-size: 26px;
 	}
 
 }
